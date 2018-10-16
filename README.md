@@ -1,4 +1,4 @@
-# PingMeWhen public Repo
+# PingMeWhen Public Repository
 
 This is the public repository for PingMeWhen where all of our open source projects appear. All of the source code is covered under the MIT License below. Logos and other graphics Copyright © 2018 PingMeWhen.com. All rights reserved.
 
