@@ -1,9 +1,9 @@
 var formatResult = function(result)
 {
-    result = result.replace("<","{");
-    result = result.replace(">","}");
-    result = result.replace("{","<span style='background:#dddddd; border: 1px solid #cccccc; border-radius: 3px; padding: 3px; '>");
-    result = result.replace("}","</span>");
+    result = result.replace(new RegExp('<', 'g'),"{");
+    result = result.replace(new RegExp('>', 'g'),"}");
+    result = result.replace(new RegExp('{', 'g'),"<span style='background:#dddddd; border: 1px solid #cccccc; border-radius: 3px; padding: 3px; '>");
+    result = result.replace(new RegExp('}', 'g'),"</span>");
     return result;
 }
 

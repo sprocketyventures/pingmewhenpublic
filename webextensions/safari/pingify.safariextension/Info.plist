@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>PingMeWhen</string>
 	<key>Builder Version</key>
-	<string>13606.2.11</string>
+	<string>14607.1.40.1.4</string>
 	<key>CFBundleDisplayName</key>
 	<string>pingify</string>
 	<key>CFBundleIdentifier</key>
@@ -86,6 +86,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://www.pingmewhen.com/files/safariupdate.plist</string>
 	<key>Website</key>
 	<string>http://www.pingmewhen.com</string>
 </dict>

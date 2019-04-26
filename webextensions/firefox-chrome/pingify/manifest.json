@@ -1,58 +1,59 @@
 {
+  "description": "Add PingMeWhen results to DuckDuckGo, Google, Yahoo, and Bing searches",
+  "manifest_version": 2,
+  "name": "PingMeWhen",
+  "version": "1.0",
+  "homepage_url": "https://www.pingmewhen.com",
+  "icons": {
+    "16": "pingmewhen-16.png"
+    "32": "pingmewhen-32.png"
+    "48": "pingmewhen-48.png"
+    "128": "pingmewhen-128.png"
+  },
 
-    "description": "Add PingMeWhen results to DuckDuckGo, Google, Yahoo, and Bing searches",
-    "manifest_version": 2,
-    "name": "PingMeWhen",
-    "version": "1.0",
-    "homepage_url": "https://www.pingmewhen.com",
-    "icons": {
-        "48": "pingmewhen-48.png"
-    },
-
-    "applications": {
-       "gecko": {
-          "id": "support@sprockety.com"
-       }
-    },
-
-    "permissions": [
-        "activeTab",
-        "webRequest",
-        "<all_urls>"
-    ],
-
-    "content_scripts": [
-        {
-            "matches": ["*://www.google.ca/search*","*://www.google.com/search*"],
-            "js": ["common.js","pingmewhengoogle.js"]
-        },
-        {
-            "matches": ["*://duckduckgo.com/?q*"],
-            "js": ["common.js","pingmewhenddg.js"]
-        },
-        {
-            "matches": ["*://www.bing.com/search*"],
-            "js": ["common.js","pingmewhenbing.js"]
-        },
-        {
-            "matches": ["*://ca.search.yahoo.com/search*"],
-            "js": ["common.js","pingmewhenyahoo.js"]
-        }
-    ],
-
-    "web_accessible_resources": [
-        "pingmewhen-32.png"
-    ],
-
-    "browser_action": {
-        "default_icon": "pingmewhen-32.png",
-        "theme_icons": [{
-            "light": "pingmewhen-32-light.png",
-            "dark": "pingmewhen-32.png",
-            "size": 32
-            }],
-            "default_title": "Pingify",
-            "default_popup": "pingmewhen.html"
-        }
-
+  "applications": {
+    "gecko": {
+      "id": "support@sprockety.com"
     }
+  },
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.ca/search*","*://www.google.com/search*"],
+      "js": ["common.js","pingmewhengoogle.js"]
+    },
+    {
+      "matches": ["*://duckduckgo.com/?q*"],
+      "js": ["common.js","pingmewhenddg.js"]
+    },
+    {
+      "matches": ["*://www.bing.com/search*"],
+      "js": ["common.js","pingmewhenbing.js"]
+    },
+    {
+      "matches": ["*://ca.search.yahoo.com/search*"],
+      "js": ["common.js","pingmewhenyahoo.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "pingmewhen-32.png"
+  ],
+
+  "browser_action": {
+    "default_icon": "pingmewhen-32.png",
+    "theme_icons": [{
+      "light": "pingmewhen-32-light.png",
+      "dark": "pingmewhen-32.png",
+      "size": 32
+    }],
+    "default_title": "Pingify",
+    "default_popup": "pingmewhen.html"
+  }
+}
